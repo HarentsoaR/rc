@@ -368,7 +368,7 @@ class rcube_smtp
                 $from = 'no-reply-' . $from;
             }
 
-            //Case where the domain contains '@generali.fr'
+            //Case where the domain contains '@generali.fr' or '@generali.com'
             else  if (strpos($recipient, '@generali.fr') !== false || strpos($recipient, '@generali.com') !== false) {
                 // Handle the case where the email contains '@generali.fr'
                 // You can log an error message or take appropriate action here.
