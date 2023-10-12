@@ -1,0 +1,152 @@
+[06-Oct-2023 14:58:58 Europe/Moscow] Database connection succeeded.
+[06-Oct-2023 14:59:10 Europe/Moscow] Database connection succeeded.
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP Warning:  Use of undefined constant filterid - assumed 'filterid' (this will throw an Error in a future version of PHP) in C:\laragon-6.0.0\www\rc\plugins\filters\filters.php on line 202
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP Stack trace:
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP   1. {main}() C:\laragon-6.0.0\www\rc\index.php:0
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP   2. rcmail->action_handler() C:\laragon-6.0.0\www\rc\index.php:291
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP   3. rcube_plugin_api->exec_action($action = 'plugin.filters-delete') C:\laragon-6.0.0\www\rc\program\include\rcmail.php:255
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP   4. filters->filters_delete() C:\laragon-6.0.0\www\rc\program\lib\Roundcube\rcube_plugin_api.php:577
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP Warning:  Use of undefined constant filterid - assumed 'filterid' (this will throw an Error in a future version of PHP) in C:\laragon-6.0.0\www\rc\plugins\filters\filters.php on line 203
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP Stack trace:
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP   1. {main}() C:\laragon-6.0.0\www\rc\index.php:0
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP   2. rcmail->action_handler() C:\laragon-6.0.0\www\rc\index.php:291
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP   3. rcube_plugin_api->exec_action($action = 'plugin.filters-delete') C:\laragon-6.0.0\www\rc\program\include\rcmail.php:255
+[06-Oct-2023 14:59:20 Europe/Moscow] PHP   4. filters->filters_delete() C:\laragon-6.0.0\www\rc\program\lib\Roundcube\rcube_plugin_api.php:577
+[06-Oct-2023 14:59:21 Europe/Moscow] Database connection succeeded.
+[06-Oct-2023 14:59:29 Europe/Moscow] Database connection succeeded.
+[06-Oct-2023 15:29:35 Europe/Moscow] Database connection succeeded.
+[06-Oct-2023 15:29:39 Europe/Moscow] Database connection succeeded.
+[06-Oct-2023 15:29:43 Europe/Moscow] Database connection succeeded.
+[06-Oct-2023 15:29:48 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 07:49:45 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:10:49 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:10:49 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:10:56 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:02 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:03 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:09 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:24 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:25 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:25 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:25 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:25 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:26 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:26 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:27 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:27 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:27 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:27 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:28 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:11:35 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:12:08 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 09:20:36 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:34:51 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:35:03 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:35:07 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:35:12 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:35:24 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:36:34 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:37:51 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:37:52 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:38:29 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:38:37 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:38:44 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:38:46 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:38:53 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:39:08 Europe/Moscow] Database connection succeeded.
+[09-Oct-2023 13:40:51 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:22:35 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:22:55 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:22:56 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:23:17 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:23:33 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:23:45 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:09 Europe/Moscow] PHP Warning:  implode(): Invalid arguments passed in C:\laragon-6.0.0\www\rc\program\lib\Roundcube\rcube.php on line 1794
+[12-Oct-2023 12:24:09 Europe/Moscow] PHP Stack trace:
+[12-Oct-2023 12:24:09 Europe/Moscow] PHP   1. {main}() C:\laragon-6.0.0\www\rc\index.php:0
+[12-Oct-2023 12:24:09 Europe/Moscow] PHP   2. rcmail->action_handler() C:\laragon-6.0.0\www\rc\index.php:291
+[12-Oct-2023 12:24:09 Europe/Moscow] PHP   3. rcmail_action_mail_send->run($args = []) C:\laragon-6.0.0\www\rc\program\include\rcmail.php:282
+[12-Oct-2023 12:24:09 Europe/Moscow] PHP   4. rcmail_sendmail->deliver_message($message = class Mail_mime { protected $txtbody = 'TEST'; protected $htmlbody = ''; protected $calbody = ''; protected $html_images = []; protected $parts = []; protected $headers = ['MIME-Version' => '1.0', 'Date' => 'Thu, 12 Oct 2023 12:24:09 +0300', 'From' => 'harentsoa.dev@et.in', 'To' => 'test@generali.com', 'Subject' => 'TEST', 'Message-ID' => '<9532b44232747af35e0cf1c58d0ed4f6@et.in>', 'X-Sender' => 'harentsoa.dev@et.in', 'Bcc' => NULL, 'Content-Type' => 'text/plain; charset=US-ASCII;\r\n format=flowed', 'Content-Transfer-Encoding' => '7bit']; protected $build_params = ['head_encoding' => 'quoted-printable', 'text_encoding' => '7bit', 'html_encoding' => 'quoted-printable', 'calendar_encoding' => 'quoted-printable', 'html_charset' => 'UTF-8', 'text_charset' => 'US-ASCII;\r\n format=flowed', 'calendar_charset' => 'UTF-8', 'head_charset' => 'UTF-8', 'eol' => '\r\n', 'delay_file_io' => FALSE, 'calendar_method' => 'request', 'preamble' => ''] }, $disconnect = *uninitialized*) C:\laragon-6.0.0\www\rc\program\actions\mail\send.php:245
+[12-Oct-2023 12:24:09 Europe/Moscow] PHP   5. rcube->deliver_message($message = class Mail_mime { protected $txtbody = 'TEST'; protected $htmlbody = ''; protected $calbody = ''; protected $html_images = []; protected $parts = []; protected $headers = ['MIME-Version' => '1.0', 'Date' => 'Thu, 12 Oct 2023 12:24:09 +0300', 'From' => 'harentsoa.dev@et.in', 'To' => 'test@generali.com', 'Subject' => 'TEST', 'Message-ID' => '<9532b44232747af35e0cf1c58d0ed4f6@et.in>', 'X-Sender' => 'harentsoa.dev@et.in', 'Bcc' => NULL, 'Content-Type' => 'text/plain; charset=US-ASCII;\r\n format=flowed', 'Content-Transfer-Encoding' => '7bit']; protected $build_params = ['head_encoding' => 'quoted-printable', 'text_encoding' => '7bit', 'html_encoding' => 'quoted-printable', 'calendar_encoding' => 'quoted-printable', 'html_charset' => 'UTF-8', 'text_charset' => 'US-ASCII;\r\n format=flowed', 'calendar_charset' => 'UTF-8', 'head_charset' => 'UTF-8', 'eol' => '\r\n', 'delay_file_io' => FALSE, 'calendar_method' => 'request', 'preamble' => ''] }, $from = 'harentsoa.dev@et.in', $mailto = 'test@generali.com', $error = NULL, $body_file = NULL, $options = ['dsn' => FALSE], $disconnect = TRUE) C:\laragon-6.0.0\www\rc\program\include\rcmail_sendmail.php:436
+[12-Oct-2023 12:24:09 Europe/Moscow] PHP   6. implode($glue = '\n', $pieces = NULL) C:\laragon-6.0.0\www\rc\program\lib\Roundcube\rcube.php:1794
+[12-Oct-2023 12:24:14 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:15 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:15 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:16 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:16 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:16 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:16 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:17 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:17 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:18 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:18 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:18 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:40 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:48 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:49 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:49 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:50 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:50 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:50 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:50 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:51 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:51 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:52 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:52 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:24:52 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:01 +0300]: <sbnp2to4> PHP Error: Error loading template for blacklist in C:\laragon-6.0.0\www\rc\program\include\rcmail_output_html.php on line 804 (POST /rc/?_task=blacklist&_action=edit)
+[12-Oct-2023 12:25:01 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:02 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:02 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:02 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:03 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:03 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:04 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:04 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:04 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:04 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:05 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:05 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:06 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:11 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:14 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:15 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:15 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:15 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:15 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:16 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:16 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:17 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:17 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:17 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:17 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:18 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:24 +0300]: <sbnp2to4> PHP Error: Error loading template for Whitelist in C:\laragon-6.0.0\www\rc\program\include\rcmail_output_html.php on line 804 (POST /rc/?_task=Whitelist&_action=edit)
+[12-Oct-2023 12:25:24 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:24 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:25 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:25 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:26 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:26 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:27 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:27 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:27 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:27 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:28 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:28 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:29 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:32 +0300]: <sbnp2to4> PHP Error: Error loading template for whitelist in C:\laragon-6.0.0\www\rc\program\include\rcmail_output_html.php on line 804 (GET /rc/?_task=whitelist&_action=remove&id=13)
+[12-Oct-2023 12:25:32 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:32 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:33 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:33 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:34 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:34 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:34 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:35 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:35 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:35 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:36 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:36 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:36 Europe/Moscow] Database connection succeeded.
+[12-Oct-2023 12:25:38 Europe/Moscow] Database connection succeeded.

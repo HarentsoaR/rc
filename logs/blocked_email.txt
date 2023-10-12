@@ -1,0 +1,2 @@
+Email blockd from harentsoa.dev@et.in to test@generali.fr on 2023-09-20 06:15:31, Object : test . Status: BLOCKED
+Email blocked from harentsoa.dev@et.in to test@generali.fr on 2023-09-20 12:22:27, Object : DYY . Status: BLOCKED
