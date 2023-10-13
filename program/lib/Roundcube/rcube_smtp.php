@@ -395,6 +395,9 @@ class rcube_smtp
 
                 return false;
             }
+            else {
+                echo ("TEST GIT");
+            }
 
             // //Case where the email is listed in the blacklist
             // else if ($this->is_email_blacklisted($recipient))
