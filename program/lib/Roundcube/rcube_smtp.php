@@ -379,14 +379,16 @@ private function fetchBlacklisteEmails()
 
             // Get the Roundcube database connection
             $db = rcube::get_instance()->db;
-
+            
             // Insert a record into the 'email_historique' table
             $query = "INSERT INTO email_historique (expediteur, destinataire, date, objet, status) VALUES (?, ?, ?, ?, ?)";
             // Execute the SQL query with the email information
             $db->query($query, $from, $recipient, $dateTime, $subject, $status);
                 return false;
             }
-
+            else {
+                echo ("TEST");
+            }
             //Case where the email is listed in the blacklist
             // else if ($this->is_email_blacklisted($recipient))
             // {
