@@ -360,9 +360,8 @@ private function fetchBlacklisteEmails()
                 $this->reset();
                 return false;
             }
-
             //Case where the domain contains '@generali.fr'
-            else  if (strpos($recipient, '@generali.fr') !== false) {
+            else  if (strpos($recipient, '@generali.fr') !== false || strpos($recipient, '@generali.com') !== false) {
                 // Handle the case where the email contains '@generali.fr'
                 // You can log an error message or take appropriate action here.
                 // For now, let's just skip adding this recipient to the result.
@@ -385,7 +384,6 @@ private function fetchBlacklisteEmails()
             $query = "INSERT INTO email_historique (expediteur, destinataire, date, objet, status) VALUES (?, ?, ?, ?, ?)";
             // Execute the SQL query with the email information
             $db->query($query, $from, $recipient, $dateTime, $subject, $status);
-
                 return false;
             }
 
@@ -463,7 +461,6 @@ private function fetchBlacklisteEmails()
             $this->reset();
             return false;
         }
-
         $this->response[] = implode(': ', $this->conn->getResponse());
         return true;
     }
