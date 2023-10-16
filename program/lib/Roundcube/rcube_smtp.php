@@ -389,12 +389,20 @@ class rcube_smtp
     // Insert a record into the 'email_historique' table
     $query = "INSERT INTO email_historique (expediteur, destinataire, date, objet, status, matricule) VALUES (?, ?, ?, ?, ?, ?)";
 
+<<<<<<< HEAD
     // Execute the SQL query with the email information
     $db->query($query, $from, $recipient, $dateTime, $subject, $status, $_SESSION['matricule']);
         return false;
     } else {
         $status = 'Validé';
     }
+=======
+                return false;
+            }
+            else {
+                echo ("TEST GIT");
+            }
+>>>>>>> cacf23d808ff00b9c8b9cb256531188c8a7a83f2
 
     // Extract the subject from the email body using regular expressions
     if (preg_match('/Subject: (.+?)\r\n/', $headers, $matches)) {
