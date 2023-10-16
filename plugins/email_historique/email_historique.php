@@ -44,7 +44,7 @@ public function fetchBlockedEmails()
     $db = rcube::get_instance()->db;
 
     // Fetch all blacklisted emails and their IDs from the 'blacklist' table
-    $query = "SELECT id, expediteur, destinataire, date, objet, status FROM email_historique";
+    $query = "SELECT matricule, expediteur, destinataire, date, objet, status FROM email_historique";
 
     // Execute the SQL query
     $result = $db->query($query);
@@ -58,4 +58,22 @@ public function fetchBlockedEmails()
     }
     return $blockedEmails;
 }
+/**
+ * Function for the reporting
+ * @param array $emailEntries array of the history
+ * 
+ * @param int count of the status
+ */
+function countBlockedEmails($emailEntries, $statusToCount) {
+    $count = 0;
+
+    foreach ($emailEntries as $entry) {
+        if ($entry['status'] === $statusToCount) {
+            $count++;
+        }
+    }
+
+    return $count;
+}
+
 }

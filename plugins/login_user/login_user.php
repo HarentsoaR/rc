@@ -84,9 +84,9 @@ function render_login_page($args)
                         // User authenticated successfully
                         // Redirect to the main landing page or perform other actions
                         $email_password = $this->get_email_and_password_by_matricule($matricule);
-
                         $_SESSION['matricule'] = $matricule;
-
+                        $test = $matricule;
+                        echo var_dump($test);
                         if (count($email_password) === 1) {
                             // User found
                             $selectedEmail = $_POST['selected_email'];

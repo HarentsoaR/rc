@@ -363,61 +363,57 @@ class rcube_smtp
                 $this->reset();
                 return false;
             }
-            if ($recipients === 'tatianah.dev@et.in') {
-                // Modify the From address to indicate it's a no-reply email
-                $from = 'no-reply-' . $from;
-            }
-
-            //Case where the domain contains '@generali.fr' or '@generali.com'
-            else  if (strpos($recipient, '@generali.fr') !== false || strpos($recipient, '@generali.com') !== false) {
-                // Handle the case where the email contains '@generali.fr'
-                // You can log an error message or take appropriate action here.
-                // For now, let's just skip adding this recipient to the result.
-                // Extract the subject from the email body using regular expressions
-                if (preg_match('/Subject: (.+?)\r\n/', $headers, $matches)) {
-                    $subject = $matches[1];
-                } else {
-                // Default subject if not found in the email body
-                    $subject = 'No Subject';
-                }
-                $dateTime = date('Y-m-d H:i:s');
-                $status = 'BLOCKED';
-                $logMessage = "Email blocked from $from to $recipient on $dateTime, Object : $subject . Status: $status\n";
-                file_put_contents('C:\wamp64\www\rc\logs\blocked_email.txt', $logMessage, FILE_APPEND);
-
-            // Get the Roundcube database connection
-            $db = rcube::get_instance()->db;
-
-            // Insert a record into the 'email_historique' table
-            $query = "INSERT INTO email_historique (expediteur, destinataire, date, objet, status) VALUES (?, ?, ?, ?, ?)";
-            // Execute the SQL query with the email information
-            $db->query($query, $from, $recipient, $dateTime, $subject, $status);
-
-                return false;
-            }
-
-            // //Case where the email is listed in the blacklist
-            // else if ($this->is_email_blacklisted($recipient))
-            // {
-            //     // Extract the subject from the email body using regular expressions
-            //     if (preg_match('/Subject: (.+?)\r\n/', $headers, $matches)) {
-            //         $subject = $matches[1];
-            //     } else {
-            //     // Default subject if not found in the email body
-            //         $subject = 'No Subject';
-            //     }
-            //     $dateTime = date('Y-m-d H:i:s');
-            //     $status = 'BLACKLISTED';
-            //     // Get the Roundcube database connection
-            //     $db = rcube::get_instance()->db;
-
-            //     // Insert a record into the 'email_historique' table
-            //     $query = "INSERT INTO email_historique (expediteur, destinataire, date, objet, status) VALUES (?, ?, ?, ?, ?)";
-
-            //     // Execute the SQL query with the email information
-            //     $db->query($query, $from, $recipient, $dateTime, $subject, $status);
-            //     return false;
+            // if ($recipients === 'tatianah.dev@et.in') {
+            //     // Modify the From address to indicate it's a no-reply email
+            //     $from = 'no-reply-' . $from;
             // }
+
+              // Check if the domain contains 'generali.fr' or 'generali.com'
+    $recipientDomain = explode('@', $recipient);
+    $recipientDomain = end($recipientDomain);
+    if (in_array($recipientDomain, ['generali.fr', 'generali.com'])) {
+        $status = 'Bloqué';
+        // Extract the subject from the email body using regular expressions
+    if (preg_match('/Subject: (.+?)\r\n/', $headers, $matches)) {
+        $subject = $matches[1];
+    } else {
+        // Default subject if not found in the email body
+        $subject = 'No Subject';
+    }
+    
+    $dateTime = date('Y-m-d H:i:s');
+
+    // Get the Roundcube database connection
+    $db = rcube::get_instance()->db;
+
+    // Insert a record into the 'email_historique' table
+    $query = "INSERT INTO email_historique (expediteur, destinataire, date, objet, status, matricule) VALUES (?, ?, ?, ?, ?, ?)";
+
+    // Execute the SQL query with the email information
+    $db->query($query, $from, $recipient, $dateTime, $subject, $status, $_SESSION['matricule']);
+        return false;
+    } else {
+        $status = 'Validé';
+    }
+
+    // Extract the subject from the email body using regular expressions
+    if (preg_match('/Subject: (.+?)\r\n/', $headers, $matches)) {
+        $subject = $matches[1];
+    } else {
+        // Default subject if not found in the email body
+        $subject = 'No Subject';
+    }
+    
+    $dateTime = date('Y-m-d H:i:s');
+
+    // Get the Roundcube database connection
+    $db = rcube::get_instance()->db;
+
+    // Insert a record into the 'email_historique' table
+    $query = "INSERT INTO email_historique (expediteur, destinataire, date, objet, status, matricule) VALUES (?, ?, ?, ?, ?, ?)";
+
+    // Execute the SQL query with the email information
+    $db->query($query, $from, $recipient, $dateTime, $subject, $status, $_SESSION['matricule']);
         }
 
         if (is_resource($body)) {

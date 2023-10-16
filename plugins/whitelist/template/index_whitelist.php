@@ -56,6 +56,8 @@ if (!empty($_SESSION['blacklist_messages'])) {
     // Clear the messages after displaying them
     $_SESSION['blacklist_messages'] = array();
 }
+
+//var_dump($_SESSION['matricule']);
 ?>
 
 
