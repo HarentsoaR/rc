@@ -63,7 +63,7 @@
     <div class="input-group">
         <select id="searchCriteria" class="form-select">
         <option value="expediteur">Matricule</option>
-            <option value="expediteur">Expediteur</option>
+            <option value="expediteur">Expéditeur</option>
             <option value="destinataire">Destinataire</option>
             <option value="date">Date</option>
             <option value="objet">Objet</option>

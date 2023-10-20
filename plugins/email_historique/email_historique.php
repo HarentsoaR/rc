@@ -59,7 +59,7 @@ public function fetchBlockedEmails()
     return $blockedEmails;
 }
 /**
- * Function for the reporting
+ * Function for the counting the emails valide and blocked
  * @param array $emailEntries array of the history
  * 
  * @param int count of the status
