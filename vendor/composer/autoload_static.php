@@ -7,8 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit5da537f3fc523dc692a083c219621f01
 {
     public static $files = array (
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
     );
@@ -27,6 +27,10 @@ class ComposerStaticInit5da537f3fc523dc692a083c219621f01
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
         ),
+        'O' => 
+        array (
+            'OTPHP\\' => 6,
+        ),
         'M' => 
         array (
             'Masterminds\\' => 12,
@@ -37,12 +41,17 @@ class ComposerStaticInit5da537f3fc523dc692a083c219621f01
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
+        'E' => 
+        array (
+            'Endroid\\QrCode\\' => 15,
+        ),
         'D' => 
         array (
             'DASPRiD\\Enum\\' => 13,
         ),
         'B' => 
         array (
+            'Base32\\' => 7,
             'BaconQrCode\\' => 12,
         ),
     );
@@ -65,6 +74,10 @@ class ComposerStaticInit5da537f3fc523dc692a083c219621f01
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
+        'OTPHP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spomky-labs/otphp/lib',
+        ),
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
@@ -81,9 +94,17 @@ class ComposerStaticInit5da537f3fc523dc692a083c219621f01
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Endroid\\QrCode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/endroid/qrcode/src',
+        ),
         'DASPRiD\\Enum\\' => 
         array (
             0 => __DIR__ . '/..' . '/dasprid/enum/src',
+        ),
+        'Base32\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/christian-riesen/base32/src',
         ),
         'BaconQrCode\\' => 
         array (
@@ -92,6 +113,13 @@ class ComposerStaticInit5da537f3fc523dc692a083c219621f01
     );
 
     public static $prefixesPsr0 = array (
+        'Y' => 
+        array (
+            'Yubikey' => 
+            array (
+                0 => __DIR__ . '/..' . '/enygma/yubikey/src',
+            ),
+        ),
         'R' => 
         array (
             'Roundcube\\Composer' => 

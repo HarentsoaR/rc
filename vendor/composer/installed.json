@@ -122,6 +122,68 @@
             "install-path": "../caxy/php-htmldiff"
         },
         {
+            "name": "christian-riesen/base32",
+            "version": "1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ChristianRiesen/base32.git",
+                "reference": "2e82dab3baa008e24a505649b0d583c31d31e894"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ChristianRiesen/base32/zipball/2e82dab3baa008e24a505649b0d583c31d31e894",
+                "reference": "2e82dab3baa008e24a505649b0d583c31d31e894",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.17",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.5.13 || ^9.5"
+            },
+            "time": "2021-02-26T10:19:33+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Base32\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Riesen",
+                    "email": "chris.riesen@gmail.com",
+                    "homepage": "http://christianriesen.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Base32 encoder/decoder according to RFC 4648",
+            "homepage": "https://github.com/ChristianRiesen/base32",
+            "keywords": [
+                "base32",
+                "decode",
+                "encode",
+                "rfc4648"
+            ],
+            "support": {
+                "issues": "https://github.com/ChristianRiesen/base32/issues",
+                "source": "https://github.com/ChristianRiesen/base32/tree/1.6.0"
+            },
+            "install-path": "../christian-riesen/base32"
+        },
+        {
             "name": "dasprid/enum",
             "version": "1.0.4",
             "version_normalized": "1.0.4.0",
@@ -173,6 +235,120 @@
                 "source": "https://github.com/DASPRiD/Enum/tree/1.0.4"
             },
             "install-path": "../dasprid/enum"
+        },
+        {
+            "name": "endroid/qrcode",
+            "version": "1.5.7",
+            "version_normalized": "1.5.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endroid/qr-code.git",
+                "reference": "7b32cc5e4bd2f5e5191382926b18001b7cd78695"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endroid/qr-code/zipball/7b32cc5e4bd2f5e5191382926b18001b7cd78695",
+                "reference": "7b32cc5e4bd2f5e5191382926b18001b7cd78695",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "php": ">=5.3.0"
+            },
+            "time": "2016-01-01T19:08:49+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Endroid\\QrCode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen van den Enden",
+                    "email": "info@endroid.nl",
+                    "homepage": "http://endroid.nl/"
+                }
+            ],
+            "description": "Endroid QR Code",
+            "homepage": "https://github.com/endroid/QrCode",
+            "keywords": [
+                "code",
+                "endroid",
+                "qr",
+                "qrcode"
+            ],
+            "support": {
+                "issues": "https://github.com/endroid/qr-code/issues",
+                "source": "https://github.com/endroid/qr-code/tree/1.5.7"
+            },
+            "abandoned": "endroid/qr-code",
+            "install-path": "../endroid/qrcode"
+        },
+        {
+            "name": "enygma/yubikey",
+            "version": "3.4",
+            "version_normalized": "3.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/enygma/yubikey.git",
+                "reference": "31802c4f5ef24df87c4710e5893bdf8ad73554be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/enygma/yubikey/zipball/31802c4f5ef24df87c4710e5893bdf8ad73554be",
+                "reference": "31802c4f5ef24df87c4710e5893bdf8ad73554be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "4.3.2"
+            },
+            "time": "2023-01-09T16:41:59+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Yubikey": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Cornutt",
+                    "email": "ccornutt@phpdeveloper.org",
+                    "homepage": "http://www.phpdeveloper.org/"
+                }
+            ],
+            "description": "PHP library to interface with the Yubikey REST API",
+            "homepage": "https://github.com/enygma/yubikey.git",
+            "keywords": [
+                "api",
+                "rest",
+                "twofactor",
+                "yubico",
+                "yubikey"
+            ],
+            "support": {
+                "issues": "https://github.com/enygma/yubikey/issues",
+                "source": "https://github.com/enygma/yubikey/tree/3.4"
+            },
+            "install-path": "../enygma/yubikey"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1996,6 +2172,70 @@
                 "source": "https://github.com/fruux/sabre-vobject"
             },
             "install-path": "../sabre/vobject"
+        },
+        {
+            "name": "spomky-labs/otphp",
+            "version": "v5.0.1",
+            "version_normalized": "5.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Spomky-Labs/otphp.git",
+                "reference": "ada44930d9d85be1480123eca418c8c24e9a1f96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Spomky-Labs/otphp/zipball/ada44930d9d85be1480123eca418c8c24e9a1f96",
+                "reference": "ada44930d9d85be1480123eca418c8c24e9a1f96",
+                "shasum": ""
+            },
+            "require": {
+                "christian-riesen/base32": "~1.1",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "time": "2015-06-26T11:44:37+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "OTPHP\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florent Morselli",
+                    "homepage": "https://github.com/Spomky"
+                },
+                {
+                    "name": "All contributors",
+                    "homepage": "https://github.com/Spomky-Labs/otphp/contributors"
+                }
+            ],
+            "description": "PHP OTP Library compatible with Google Authenticator",
+            "homepage": "https://github.com/Spomky-Labs/otphp",
+            "keywords": [
+                "RFC 4226",
+                "RFC 6238",
+                "hotp",
+                "otp",
+                "totp"
+            ],
+            "support": {
+                "issues": "https://github.com/Spomky-Labs/otphp/issues",
+                "source": "https://github.com/Spomky-Labs/otphp/tree/v5.0.1"
+            },
+            "install-path": "../spomky-labs/otphp"
         },
         {
             "name": "symfony/deprecation-contracts",

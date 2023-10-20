@@ -25,12 +25,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '1a6023696888dee8f0c813ff54b13cd32e68bc92',
     'name' => 'roundcube/roundcubemail',
   ),
   'versions' => 
@@ -53,6 +53,15 @@ private static $installed = array (
       ),
       'reference' => '3f8ee7edda3d7c6d2e58a02d70a12d3242c84ea5',
     ),
+    'christian-riesen/base32' => 
+    array (
+      'pretty_version' => '1.6.0',
+      'version' => '1.6.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2e82dab3baa008e24a505649b0d583c31d31e894',
+    ),
     'dasprid/enum' => 
     array (
       'pretty_version' => '1.0.4',
@@ -61,6 +70,24 @@ private static $installed = array (
       array (
       ),
       'reference' => '8e6b6ea76eabbf19ea2bf5b67b98e1860474012f',
+    ),
+    'endroid/qrcode' => 
+    array (
+      'pretty_version' => '1.5.7',
+      'version' => '1.5.7.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7b32cc5e4bd2f5e5191382926b18001b7cd78695',
+    ),
+    'enygma/yubikey' => 
+    array (
+      'pretty_version' => '3.4',
+      'version' => '3.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '31802c4f5ef24df87c4710e5893bdf8ad73554be',
     ),
     'ezyang/htmlpurifier' => 
     array (
@@ -319,12 +346,12 @@ private static $installed = array (
     ),
     'roundcube/roundcubemail' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '1a6023696888dee8f0c813ff54b13cd32e68bc92',
     ),
     'roundcube/rtf-html-php' => 
     array (
@@ -350,6 +377,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '129d80533a9ec0d9cacfb50b51180c34edb6874c',
+    ),
+    'spomky-labs/otphp' => 
+    array (
+      'pretty_version' => 'v5.0.1',
+      'version' => '5.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ada44930d9d85be1480123eca418c8c24e9a1f96',
     ),
     'symfony/deprecation-contracts' => 
     array (

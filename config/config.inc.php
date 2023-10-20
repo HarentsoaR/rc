@@ -117,6 +117,25 @@ $config['plugins'] = [
 //Size of uploaded file
 $config['max_message_size'] = '20M';
 
+//LDAP
+$config['ldap_public'] = array(
+    'MyAdLdap' => array (
+        'name' => 'EasyTech',
+        'hosts' => array('easytech.mg'),
+        'port' => 389,
+        'user_specific' => false,
+        'base_dn' => 'dc=easytech,dc=mg',
+        'bind_dn' => 'EASYTECH\\%u',
+        'bind_pass' => '',   // the user login password is used
+        'filter' => '(objectClass=inetOrgPerson)',
+        'groups' => array(
+            'base_dn' => '',     // in this Howto, the same base_dn as for the contacts is used
+            'filter' => '(objectClass=groupOfNames)',
+            'object_classes' => array("top", "groupOfNames"),
+        ),
+    ),
+);
+
 
 
 

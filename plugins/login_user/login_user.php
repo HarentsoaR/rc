@@ -16,36 +16,27 @@ class login_user extends rcube_plugin
      * 
      * @return bool True or False
      */
-    function custom_authenticate($username, $password)
-{
-    try {
-        // Create a new PDO database connection
-        $db = new PDO('pgsql:host=localhost;dbname=datamining;user=postgres;password=admin');
-        
-        // Set PDO to throw exceptions on errors
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        // Query the "r_personnel" table to authenticate the user
-        $query = "SELECT * FROM r_personnel WHERE matricule = ? AND mdp = ?";
-        $stmt = $db->prepare($query);
-        $stmt->execute([$username, $password]);
-
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if ($result) {
-            // User authenticated successfully
+    function custom_authenticate($matricule, $password) {
+        // LDAP server details
+        $ldap_server = 'ldap://easytech.mg';
+        $ldap_user = 'EASYTECH\\' . $matricule;
+        $ldap_password = $password;
+    
+        // Connect to the LDAP server
+        $ldap_conn = ldap_connect($ldap_server);
+    
+        // Bind to the LDAP server
+        $ldap_bind = @ldap_bind($ldap_conn, $ldap_user, $ldap_password);
+    
+        // Check if the bind was successful
+        if ($ldap_bind) {
+            // The bind was successful, so return true
             return true;
         } else {
-            // Authentication failed
+            // The bind failed, so return false
             return false;
         }
-    } catch (PDOException $e) {
-        // Handle any database connection errors here
-        // You can log the error or take other appropriate actions
-        error_log('Database connection error: ' . $e->getMessage());
-        return false;
     }
-}
 
 /**
  * Function render_login_page

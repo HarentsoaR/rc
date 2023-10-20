@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Yubikey' => array($vendorDir . '/enygma/yubikey/src'),
     'Roundcube\\Composer' => array($vendorDir . '/roundcube/plugin-installer/src'),
     'Net' => array($vendorDir . '/pear/net_smtp', $vendorDir . '/pear/net_socket'),
     'Mail' => array($vendorDir . '/pear/mail_mime'),

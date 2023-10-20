@@ -1281,3 +1281,6 @@
 [16-Oct-2023 14:35:13 +0300]: <d4cdhe04> Send new auth cookie for d4cdhe04qm4vqfdtbg923r3lhd: y8dZWrfYAjmgucVcL1E2xzj9Xl-1697455800
 [16-Oct-2023 14:40:13 +0300]: <d4cdhe04> Session auth check failed for d4cdhe04qm4vqfdtbg923r3lhd; timeslot = 2023-10-16 14:40:00
 [16-Oct-2023 14:40:13 +0300]: <d4cdhe04> Send new auth cookie for d4cdhe04qm4vqfdtbg923r3lhd: y8dZWrfYAjmgucVcL1E2xzj9Xl-1697456100
+[20-Oct-2023 15:13:41 +0300]: <2rqjvgbj> Aborted session 2rqjvgbj6npr2klgfpo0ek1uau; no valid session data found
+[20-Oct-2023 15:13:49 +0300]: <2rqjvgbj> Aborted session 2rqjvgbj6npr2klgfpo0ek1uau; no valid session data found
+[20-Oct-2023 15:13:56 +0300]: <2rqjvgbj> Session destroy: 2rqjvgbj6npr2klgfpo0ek1uau

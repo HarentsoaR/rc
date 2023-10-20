@@ -23,7 +23,10 @@
         "guzzlehttp/guzzle": "^7.3.0",
         "kolab/net_ldap3": "~1.1.1",
         "kolab/libcalendaring": "^3.5",
-        "kolab/libkolab": "^3.5"
+        "kolab/libkolab": "^3.5",
+        "endroid/qrcode": "~1.5.0",
+        "spomky-labs/otphp": "~5.0.0",
+        "enygma/yubikey": "~3.2"
     },
     "suggest": {
         "bjeavons/zxcvbn-php": "^1.0 required for Zxcvbn password strength driver"
