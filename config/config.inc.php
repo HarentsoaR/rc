@@ -117,6 +117,7 @@ $config['plugins'] = [
 //Size of uploaded file
 $config['max_message_size'] = '20M';
 
+
 //LDAP
 $config['ldap_public'] = array(
     'MyAdLdap' => array (

@@ -8,7 +8,7 @@ class login_user extends rcube_plugin
         $this->add_hook('render_page', array($this, 'render_login_page'));
     }
     /**
-     * Function for authentification
+     * Function for authentification by using LDAP
      * 
      * @param string Username
      * 

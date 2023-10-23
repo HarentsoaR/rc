@@ -35,6 +35,11 @@
             font-family: "Tahoma", sans-serif; /* Replace with your preferred font-family */
             font-weight: lighter; 
         }
+        .date-input-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
     </style>
 </head>
 <body>
@@ -59,6 +64,16 @@
         <strong class="text-danger">E-mail bloqué:</strong>
         <h5 class="text-danger"><?php echo $this->countBlockedEmails($this->fetchBlockedEmails(), 'Bloqué'); ?></h5>
     </div>
+    <div class="row">
+    <div class="date-input-container col-md-6">
+        <input type="date" id="startDate" class="form-control" placeholder="Start Date">
+        <input type="date" id="endDate" class="form-control" placeholder="End Date">
+        <button type="button" class="btn btn-info" style="width:4em;height:2.5em;">
+        <i class="fa fa-search"></i>
+    </button>
+    </div>
+</div>
+ 
         <!-- Search TextField -->
     <div class="input-group">
         <select id="searchCriteria" class="form-select">
@@ -71,6 +86,7 @@
         <input type="text" id="emailSearch" class="form-control" placeholder="Rechercher">
     </div>
 </div>
+
 
 
 
@@ -119,6 +135,7 @@
 
 <!-- Include Bootstrap JS (optional) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     var searchInput = document.getElementById("emailSearch");
@@ -136,6 +153,47 @@ document.addEventListener("DOMContentLoaded", function () {
                 row.style.display = "none";
             }
         });
+    });
+});
+document.querySelector('.btn-info').addEventListener('click', function() {
+    var startDate = document.getElementById('startDate').value;
+    var endDate = document.getElementById('endDate').value;
+    console.log(startDate);
+    console.log(endDate);
+
+    // Send a GET request to the PHP file
+    $.ajax({
+        type: 'GET',
+        url: 'http://10.128.130.13:8181/rc/plugins/email_historique/template/api_date.php',
+        data: { startDate: startDate, endDate: endDate },
+        dataType: 'json',
+        success: function(data) {
+            // Update the table with the fetched data
+            var table = document.getElementById('emailHistoryTable');
+            table.innerHTML = ''; // Clear the table
+            for (var i = 0; i < data.length; i++) {
+                // Add a row to the table for each email
+                var row = table.insertRow();
+                // Add cells to the row for each email property
+                row.insertCell().innerText = data[i]['matricule'];
+                row.insertCell().innerText = data[i]['expediteur'];
+                row.insertCell().innerText = data[i]['destinataire'];
+                row.insertCell().innerText = data[i]['date'];
+                row.insertCell().innerText = data[i]['time'];
+                row.insertCell().innerText = data[i]['objet'];
+                row.insertCell().innerText = data[i]['status'];
+            }
+
+            // Update the reporting with the fetched data
+            document.querySelector('.alert-primary h5').innerText = data.length;
+            document.querySelector('.alert-success h5').innerText = data.filter(function(email) { return email['status'] == 'Validé'; }).length;
+            document.querySelector('.alert-danger h5').innerText = data.filter(function(email) { return email['status'] == 'Bloqué'; }).length;
+            console.log("TEST");
+            console.log(data);
+        },
+        error: function(xhr, status, error) {
+            console.error(error);
+        }
     });
 });
 </script>
